@@ -1,0 +1,51 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # needed for the gh‑pages push
+
+    steps:
+      # 1️⃣ Checkout repo
+      - uses: actions/checkout@v4
+
+      # 2️⃣ Set up Node.js (v20) and enable npm cache
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      # 3️⃣ Change into the Next.js app directory
+      - name: Change to app directory
+        working-directory: ./app
+        run: pwd   # just to confirm we are in the right place
+
+      # 4️⃣ Install dependencies (inside ./app)
+      - name: Install dependencies
+        working-directory: ./app
+        run: npm ci
+
+      # 5️⃣ Build the Next.js app (inside ./app)
+      - name: Build Next.js app
+        working-directory: ./app
+        run: npm run build
+
+      # 6️⃣ Export static site (creates ./app/out)
+      - name: Export static site
+        working-directory: ./app
+        run: npm run export
+
+      # 7️⃣ Deploy the exported site to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./app/out   # path to the static export
+          force_orphan: true
+          enable_jekyll: false
