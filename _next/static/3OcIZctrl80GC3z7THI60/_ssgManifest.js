@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002Fclinics\u002F[id]","\u002Fknowledge\u002F[slug]","\u002Franking\u002Farea\u002F[pref]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()

@@ -1,0 +1,4 @@
+1:"$Sreact.fragment"
+2:I[83706,["/pgta-knowledge/_next/static/chunks/43kq_bgfi5gbm.js","/pgta-knowledge/_next/static/chunks/3cebyu4xapvs-.js"],"default"]
+3:I[79404,["/pgta-knowledge/_next/static/chunks/43kq_bgfi5gbm.js","/pgta-knowledge/_next/static/chunks/3cebyu4xapvs-.js"],"default"]
+0:{"rsc":["$","$1","c",{"children":[null,["$","section",null,{"className":"bg-brand-ivory/20 min-h-screen","children":["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"3OcIZctrl80GC3z7THI60"}

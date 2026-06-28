@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[36222,["/pgta-knowledge/_next/static/chunks/43kq_bgfi5gbm.js","/pgta-knowledge/_next/static/chunks/3cebyu4xapvs-.js"],"ViewportBoundary"]
+3:I[36222,["/pgta-knowledge/_next/static/chunks/43kq_bgfi5gbm.js","/pgta-knowledge/_next/static/chunks/3cebyu4xapvs-.js"],"MetadataBoundary"]
+4:"$Sreact.suspense"
+5:I[52089,["/pgta-knowledge/_next/static/chunks/43kq_bgfi5gbm.js","/pgta-knowledge/_next/static/chunks/3cebyu4xapvs-.js"],"IconMark"]
+0:{"rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"PGT-A お役立ちコンテンツ | 体験談・技術・法律・選び方 | 寄り添うPGT-A相談室"}],["$","meta","1",{"name":"description","content":"PGT-A（着床前診断）に関する体験談、科学的解説、法律・倫理、エージェントの選び方まで。深く悩む方に寄り添う、すべての情報をまとめました。"}],["$","link","2",{"rel":"icon","href":"/pgta-knowledge/favicon.ico?favicon.2vob68tjqpejf.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L5","3",{}]]}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"3OcIZctrl80GC3z7THI60"}

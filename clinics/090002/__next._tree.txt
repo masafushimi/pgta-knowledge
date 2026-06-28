@@ -1,0 +1,3 @@
+:HL["/pgta-knowledge/_next/static/chunks/34r237l_j6h6q.css","style"]
+:HL["/pgta-knowledge/_next/static/media/ad9c66e761fed85a-s.p.17y412u0mab7-.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"clinics","param":null,"prefetchHints":0,"slots":{"children":{"name":"id","param":{"type":"d","key":"090002","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"3OcIZctrl80GC3z7THI60"}
