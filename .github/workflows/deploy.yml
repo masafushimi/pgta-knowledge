@@ -5,14 +5,15 @@ on:
     branches: [main]
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
@@ -22,11 +23,15 @@ jobs:
         working-directory: ./app
         run: npm ci
 
-      - name: Build
+      - name: Build Next.js app
         working-directory: ./app
-        run: npm run build && npm run export
+        run: npm run build
 
-      - name: Deploy
+      - name: Export static site
+        working-directory: ./app
+        run: npm run export
+
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
