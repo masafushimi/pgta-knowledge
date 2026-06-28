@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   output: "export",
   basePath: `/${repoName}`,
   assetPrefix: `/${repoName}`,
+  trailingSlash: true,
   // other Next.js options can be added here
 };
 
