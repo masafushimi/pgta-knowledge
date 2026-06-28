@@ -1,0 +1,33 @@
+name: Deploy to GitHub Pages
+# main ブランチに push が来たら実行
+on:
+  push:
+    branches: [main]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # ソースコード取得
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      # Node.js 環境をセットアップ
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'      # LTS バージョン
+          cache: 'npm'
+      # 依存パッケージインストール
+      - name: Install dependencies
+        run: npm ci
+      # Next.js をビルドして static export（out/ ディレクトリ）作成
+      - name: Build and export
+        run: |
+          npm run build
+          npm run export
+      # out/ を gh-pages ブランチへデプロイ
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./out     # next export の出力先
+          force_orphan: true    # 常にクリーンなブランチに上書き
