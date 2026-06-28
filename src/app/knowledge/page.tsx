@@ -60,7 +60,7 @@ export default function KnowledgePage() {
       {/* Page Header */}
       <div className="bg-white border-b border-gray-200 py-12 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-2xl md:text-4xl font-bold text-brand-text mb-4">
+          <h1 className="text-2xl md:text-4xl font-bold font-serif text-brand-text mb-4">
             PGT-A お役立ちコンテンツ
           </h1>
           <p className="text-brand-muted text-sm md:text-base max-w-2xl mx-auto">
@@ -82,7 +82,7 @@ export default function KnowledgePage() {
                   <span className={`inline-block px-3 py-1 text-xs font-bold rounded-full mb-2 ${group.tag}`}>
                     グループ{group.id}
                   </span>
-                  <h2 className="text-xl font-bold text-brand-text">{group.label}</h2>
+                  <h2 className="text-xl font-bold font-serif text-brand-text">{group.label}</h2>
                   <p className="text-brand-muted text-sm mt-1">{group.tagline}</p>
                 </div>
               </div>
@@ -115,7 +115,7 @@ export default function KnowledgePage() {
 
         {/* CTA */}
         <section className="bg-gradient-to-br from-brand-ivory to-white p-8 md:p-12 rounded-3xl text-center border border-gray-100 shadow-sm">
-          <h2 className="text-xl font-bold text-brand-text mb-3">記事を読んで、まだ迷っていますか？</h2>
+          <h2 className="text-xl font-bold font-serif text-brand-text mb-3">記事を読んで、まだ迷っていますか？</h2>
           <p className="text-sm text-brand-muted mb-6 max-w-xl mx-auto">
             情報を読んでも「私の場合はどうなの？」という疑問が残ることがあります。<br />
             そんな時は、ぜひLINEで無料相談してみてください。

@@ -25,7 +25,7 @@ export default function Home() {
           <span className="inline-block px-4 py-1 rounded-full bg-white text-brand-coral text-sm font-bold shadow-sm mb-6">
             不妊治療・流産に悩むあなたへ
           </span>
-          <h1 className="text-3xl md:text-5xl font-bold text-brand-text leading-tight mb-8">
+          <h1 className="text-3xl md:text-5xl font-bold font-serif text-brand-text leading-tight mb-8">
             「なぜ、うまくいかないのだろう」<br className="hidden md:block"/>
             その答えを探す旅に、寄り添います。
           </h1>
@@ -51,7 +51,7 @@ export default function Home() {
       <section id="worries" className="py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-4">あなたが今、一番不安なことは何ですか？</h2>
+            <h2 className="text-2xl md:text-3xl font-bold font-serif text-brand-text mb-4">あなたが今、一番不安なことは何ですか？</h2>
             <p className="text-brand-muted">多角的な視点から、あなたに必要な情報をお届けします。</p>
           </div>
 
@@ -99,7 +99,7 @@ export default function Home() {
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-5xl mx-auto">
           <div className="flex justify-between items-end mb-8">
-            <h2 className="text-2xl font-bold text-brand-text">注目の記事</h2>
+            <h2 className="text-2xl font-bold font-serif text-brand-text">注目の記事</h2>
             <Link href="/knowledge" className="text-brand-coral font-bold text-sm hover:underline">すべて見る</Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -127,7 +127,7 @@ export default function Home() {
       {/* Clinic Search Banner */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto bg-gradient-to-r from-brand-ivory to-white rounded-3xl p-8 md:p-12 border border-gray-100 text-center shadow-sm">
-          <h2 className="text-2xl font-bold text-brand-text mb-4">PGT-A対応クリニックを探す</h2>
+          <h2 className="text-2xl font-bold font-serif text-brand-text mb-4">PGT-A対応クリニックを探す</h2>
           <p className="text-brand-muted mb-8 max-w-xl mx-auto">
             日本全国のPGT-A実施承認施設（先進医療B対応・非対応含む）のデータベースをご用意しています。あなたの希望条件に合わせて検索可能です。
           </p>

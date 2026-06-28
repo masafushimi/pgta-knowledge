@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="bg-white py-12 border-t border-brand-ivory">
       <div className="max-w-5xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
-          <h3 className="text-lg font-bold text-brand-text mb-4">寄り添うPGT-A相談室</h3>
+          <h3 className="text-lg font-bold font-serif text-brand-text mb-4">寄り添うPGT-A相談室</h3>
           <p className="text-sm text-brand-muted leading-relaxed">
             何度も頑張っているのにうまくいかない。<br/>
             そんな深い悩みを抱える方へ、科学的な選択肢と<br/>
@@ -28,7 +28,7 @@ export default function Footer() {
           <p className="text-sm text-brand-muted mb-4">
             匿名でのご相談、海外ラボとの連携に関するご質問など、まずはLINEからお気軽にどうぞ。
           </p>
-          <a href="#line" className="inline-block px-6 py-2 bg-brand-coral text-white rounded-full text-sm font-medium hover:bg-brand-coral-hover transition-colors">
+          <a href="#line" className="inline-block px-6 py-2 bg-brand-line text-white rounded-full text-sm font-medium hover:bg-brand-line-hover transition-colors">
             無料LINE相談はこちら
           </a>
         </div>

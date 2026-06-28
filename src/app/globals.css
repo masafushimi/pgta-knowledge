@@ -1,13 +1,28 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-coral: #F89B8F;
-  --color-brand-coral-hover: #E88B7F;
-  --color-brand-ivory: #FAF8F5;
-  --color-brand-text: #4A4A4A;
-  --color-brand-muted: #8E8E8E;
+  /* Accent Orange */
+  --color-brand-coral: #E6724E;
+  --color-brand-coral-hover: #F38E6C;
+  
+  /* Primary Emerald */
+  --color-brand-emerald: #0B4C38;
+  --color-brand-emerald-light: #115C44;
+  
+  /* LINE Green */
+  --color-brand-line: #06C755;
+  --color-brand-line-hover: #05B34C;
+
+  /* Clean Off-white */
+  --color-brand-ivory: #FBFBFC;
+  
+  /* Primary text (Dark Emerald) */
+  --color-brand-text: #1a2e26; 
+  --color-brand-muted: #5c6e66;
   
   --font-sans: var(--font-noto-sans-jp);
+  --font-serif: var(--font-noto-serif-jp);
+  --font-cinzel: var(--font-cinzel);
 }
 
 :root {
@@ -19,4 +34,13 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), sans-serif;
+  letter-spacing: 0.05em;
+}
+
+.font-serif {
+  font-family: var(--font-serif), serif;
+}
+
+.font-cinzel {
+  font-family: var(--font-cinzel), serif;
 }
